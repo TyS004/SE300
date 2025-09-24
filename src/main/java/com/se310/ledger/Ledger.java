@@ -24,7 +24,6 @@ public class Ledger {
     // Dependencies injected through constructor (DIP)
     private final BlockchainRepository blockchainRepository;
     private final AccountService accountService;
-    private final TransactionValidator transactionValidator;
     private final BlockchainValidator blockchainValidator;
     private final TransactionProcessor transactionProcessor;
 
@@ -77,7 +76,6 @@ public class Ledger {
         this.seed = seed;
         this.blockchainRepository = blockchainRepository;
         this.accountService = accountService;
-        this.transactionValidator = transactionValidator;
         this.blockchainValidator = blockchainValidator;
         this.transactionProcessor = transactionProcessor;
     }
