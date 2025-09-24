@@ -1,2 +1,8 @@
 # Maven build directory
 target/
+
+# macOS file metadata
+.DS_Store
+
+# IntelliJ IDEA state backup
+.idea/.name
