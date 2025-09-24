@@ -10,14 +10,14 @@ package com.se310.ledger;
 public class Account implements Cloneable {
 
     private String address;
-    private Integer balance;
+    private int balance;
 
     /**
      * Account Constructor
      * @param address
      * @param balance
      */
-    public Account(String address, Integer balance) {
+    public Account(String address, int balance) {
         this.address = address;
         this.balance = balance;
     }
@@ -50,7 +50,7 @@ public class Account implements Cloneable {
      * Setter method for account balance
      * @param balance
      */
-    public void setBalance(Integer balance) {
+    public void setBalance(int balance) {
         this.balance = balance;
     }
 

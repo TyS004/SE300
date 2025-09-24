@@ -9,8 +9,8 @@ package com.se310.ledger;
 public class Transaction {
 
     private String transactionId;
-    private Integer amount;
-    private Integer fee;
+    private int amount;
+    private int fee;
     private String note;
     private Account payer;
     private Account receiver;
@@ -24,7 +24,7 @@ public class Transaction {
      * @param payer
      * @param receiver
      */
-    public Transaction(String transactionId, Integer amount, Integer fee, String note, Account payer, Account receiver) {
+    public Transaction(String transactionId, int amount, int fee, String note, Account payer, Account receiver) {
         this.transactionId = transactionId;
         this.amount = amount;
         this.fee = fee;
@@ -53,7 +53,7 @@ public class Transaction {
      * Getter method for transaction amount
      * @return
      */
-    public Integer getAmount() {
+    public int getAmount() {
         return amount;
     }
 
@@ -61,7 +61,7 @@ public class Transaction {
      * Setter method for transaction amount
      * @param amount
      */
-    public void setAmount(Integer amount) {
+    public void setAmount(int amount) {
         this.amount = amount;
     }
 
@@ -69,7 +69,7 @@ public class Transaction {
      * Getter method for transaction fee
      * @return
      */
-    public Integer getFee() {
+    public int getFee() {
         return fee;
     }
 
@@ -77,7 +77,7 @@ public class Transaction {
      * Setter method for transaction fee
      * @param fee
      */
-    public void setFee(Integer fee) {
+    public void setFee(int fee) {
         this.fee = fee;
     }
 

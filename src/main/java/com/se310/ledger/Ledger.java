@@ -155,7 +155,7 @@ public class Ledger {
      * @return Integer representing balance of the Account
      * @throws LedgerException
      */
-    public Integer getAccountBalance(String address) throws LedgerException {
+    public int getAccountBalance(String address) throws LedgerException {
         return accountService.getAccountBalance(address);
     }
 
@@ -172,7 +172,7 @@ public class Ledger {
      * @param blockNumber
      * @return Block or Null
      */
-    public Block getBlock (Integer blockNumber) throws LedgerException {
+    public Block getBlock (int blockNumber) throws LedgerException {
         Block block = blockchainRepository.getBlock(blockNumber);
         if(block == null){
             throw new LedgerException("Get Block", "Block Does Not Exist");

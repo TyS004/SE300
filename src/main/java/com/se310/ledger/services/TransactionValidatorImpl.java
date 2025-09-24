@@ -16,16 +16,16 @@ public class TransactionValidatorImpl implements TransactionValidator {
 
     @Override
     public String getValidationError(Transaction transaction) {
-        if (transaction.getAmount() < 0 || transaction.getAmount() > Integer.MAX_VALUE) {
+        if (transaction.getAmount() < 0 || transaction.getAmount() == Integer.MAX_VALUE) {
             return "Transaction Amount Is Out of Range";
         }
         
         if (transaction.getFee() < 10) {
-            return "Transaction Fee Must Be Greater Than 10";
+            return "Transaction Fee Must Be Greater than or Equal to 10";
         }
         
         if (transaction.getNote().length() > 1024) {
-            return "Note Length Must Be Less Than 1024 Chars";
+            return "Note Length Must Be Less than or Equal to 1024 Chars";
         }
         
         if (transaction.getPayer().getBalance() < (transaction.getAmount() + transaction.getFee())) {

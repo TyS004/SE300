@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class Block {
 
-    private Integer blockNumber;
+    private int blockNumber;
     private String previousHash;
     private String hash;
     private final Map<String,Account> accountBalanceMap = new HashMap<String,Account>();
@@ -34,7 +34,7 @@ public class Block {
      * Getter Method for block number
      * @return
      */
-    public Integer getBlockNumber() {
+    public int getBlockNumber() {
         return blockNumber;
     }
 
@@ -42,7 +42,7 @@ public class Block {
      * Setter Method for block number
      * @param blockNumber
      */
-    public void setBlockNumber(Integer blockNumber) {
+    public void setBlockNumber(int blockNumber) {
         this.blockNumber = blockNumber;
     }
 
